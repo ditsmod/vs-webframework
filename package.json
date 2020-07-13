@@ -1,0 +1,41 @@
+{
+  "name": "test-web-servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:express && npm run start:koa && npm run start:restify && npm run start:fastify && npm run start:nestjs && npm run start:mod",
+    "start:express": "pm2 start express.js --name express:3000",
+    "start:koa": "pm2 start koa.js --name koa:3001",
+    "start:restify": "pm2 start restify.js --name restify:3002",
+    "start:fastify": "pm2 start fastify.js --name fastify:3003",
+    "start:nestjs": "pm2 start dist/nestjs/main.js --name nestjs:3004",
+    "start:mod": "pm2 start dist/ts-stack-mod/main.js --name mod:3005"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^9.3.1",
+    "@nestjs/common": "^7.3.2",
+    "@nestjs/core": "^7.3.2",
+    "@nestjs/platform-express": "^7.3.2",
+    "@ts-stack/di": "^1.0.0",
+    "@ts-stack/mod": "^1.0.0-beta.24",
+    "express": "^4.17.1",
+    "fastify": "^3.0.2",
+    "koa": "^2.13.0",
+    "restify": "^8.5.1",
+    "rxjs": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "pm2": "^4.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "typescript": "^3.9.6"
+  }
+}
