@@ -12,5 +12,5 @@ export class HelloWorldController {
 }
 
 
-@RootModule({ controllers: [HelloWorldController], listenOptions: {port: 3005} })
+@RootModule({ controllers: [HelloWorldController], listenOptions: {port: 3006} })
 export class AppModule {}
