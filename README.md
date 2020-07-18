@@ -16,12 +16,12 @@ Here you need manually changes port in the range from 3000 to 30005.
 
 "Hello, World!" performance comparison for web frameworks:
 
-- `fastify` v3.0.2
-- `Ditsmod` v1.0.0-beta.24
-- `koa` v2.13.0
-- `restify` v8.5.1
-- `express` v4.17.1
-- `nestjs` v7.3.2
+- `Fastify` v3.0.2
+- `Ditsmod` v1.0.0-beta.1
+- `Koa` v2.13.0
+- `Restify` v8.5.1
+- `Express` v4.17.1
+- `Nestjs` v7.3.2
 
 ![req-per-sec-frameworks.png](req-per-sec-frameworks.png)
 
