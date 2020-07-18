@@ -1,5 +1,5 @@
-import { RootModule } from '@ts-stack/mod';
-import { Controller, Response, Route } from '@ts-stack/mod';
+import { RootModule } from '@ts-stack/ditsmod';
+import { Controller, Response, Route } from '@ts-stack/ditsmod';
 
 @Controller()
 export class HelloWorldController {

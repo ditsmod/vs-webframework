@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:express && npm run start:koa && npm run start:restify && npm run start:fastify && npm run start:nestjs-express && npm run start:nestjs-fastify && npm run start:mod",
+    "start": "npm run start:express && npm run start:koa && npm run start:restify && npm run start:fastify && npm run start:nestjs-express && npm run start:nestjs-fastify && npm run start:ditsmod",
     "compile": "rimraf dist/* && tsc",
     "stop": "pm2 delete all",
     "start:express": "pm2 start express.js --name express:3000",
@@ -13,7 +13,7 @@
     "start:fastify": "pm2 start fastify.js --name fastify:3003",
     "start:nestjs-express": "pm2 start dist/nestjs/main-express.js --name nestjs-express:3004",
     "start:nestjs-fastify": "pm2 start dist/nestjs/main-fastify.js --name nestjs-fastify:3005",
-    "start:mod": "pm2 start dist/ts-stack-mod/main.js --name mod:3006"
+    "start:ditsmod": "pm2 start dist/ts-stack-ditsmod/main.js --name ditsmod:3006"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +25,7 @@
     "@nestjs/platform-express": "^7.3.2",
     "@nestjs/platform-fastify": "^7.3.2",
     "@ts-stack/di": "^1.0.0",
-    "@ts-stack/mod": "^1.0.0-beta.24",
+    "@ts-stack/ditsmod": "^1.0.0-beta.1",
     "express": "^4.17.1",
     "fastify": "^3.0.2",
     "koa": "^2.13.0",
