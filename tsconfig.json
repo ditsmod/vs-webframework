@@ -18,7 +18,7 @@
   },
   "include": [
     "nestjs",
-    "ts-stack-ditsmod",
+    "ditsmod",
   ],
   "compileOnSave": false,
   "buildOnSave": false,

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run start:express && npm run start:koa && npm run start:restify && npm run start:fastify && npm run start:nestjs-express && npm run start:nestjs-fastify && npm run start:ditsmod",
-    "compile": "rimraf dist/* && tsc",
+    "build": "rimraf dist/* && tsc",
     "stop": "pm2 delete all",
     "start:express": "pm2 start express.js --name express:3000",
     "start:koa": "pm2 start koa.js --name koa:3001",
@@ -13,33 +13,35 @@
     "start:fastify": "pm2 start fastify.js --name fastify:3003",
     "start:nestjs-express": "pm2 start dist/nestjs/main-express.js --name nestjs-express:3004",
     "start:nestjs-fastify": "pm2 start dist/nestjs/main-fastify.js --name nestjs-fastify:3005",
-    "start:ditsmod": "pm2 start dist/ts-stack-ditsmod/main.js --name ditsmod:3006"
+    "start:ditsmod": "pm2 start dist/ditsmod/main.js --name ditsmod:3006"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@koa/router": "^9.3.1",
-    "@nestjs/common": "^7.3.2",
-    "@nestjs/core": "^7.3.2",
-    "@nestjs/platform-express": "^7.3.2",
-    "@nestjs/platform-fastify": "^7.3.2",
+    "@ditsmod/core": "^1.0.0-beta.2",
+    "@koa/router": "^10.0.0",
+    "@nestjs/common": "^7.6.14",
+    "@nestjs/core": "^7.6.14",
+    "@nestjs/platform-express": "^7.6.14",
+    "@nestjs/platform-fastify": "^7.6.14",
     "@ts-stack/di": "^1.0.0",
-    "@ts-stack/ditsmod": "^1.0.0-beta.1",
+    "@ts-stack/router": "^1.0.0-beta.1",
     "express": "^4.17.1",
-    "fastify": "^3.0.2",
+    "fastify": "^3.14.0",
     "koa": "^2.13.0",
     "restify": "^8.5.1",
-    "rxjs": "^6.6.0"
+    "rxjs": "^6.6.6"
   },
   "devDependencies": {
-    "@types/node": "^14.0.23",
-    "pm2": "^4.4.0",
+    "@types/node": "^14.14.35",
+    "get-body": "^1.0.3",
+    "pm2": "^4.5.5",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.3.0",
-    "typescript": "^3.9.6"
+    "typescript": "^4.2.3"
   }
 }
