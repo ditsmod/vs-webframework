@@ -7,7 +7,7 @@ npm i
 ## Run benchmarks
 
 ```bash
-npm run compile
+npm run build
 npm start
 ab -n 50000 localhost:3000/hello
 ```
