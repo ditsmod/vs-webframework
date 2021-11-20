@@ -1,5 +1,5 @@
 import { RootModule, Router, Controller, Response, Route } from '@ditsmod/core';
-import { DefaultRouter } from '@ts-stack/router';
+import { DefaultRouter } from '@ditsmod/router';
 
 @Controller()
 export class HelloWorldController {
