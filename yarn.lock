@@ -24,11 +24,9 @@
     js-tokens "^4.0.0"
 
 "@ditsmod/core@^2.0.0-next.0":
-  version "2.0.0-next.0"
-  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.0.0-next.0.tgz#882ae5c5899367a4027cb6ef98f8ce9b38013d35"
-  integrity sha512-R7vbm3EWQh9E/dROiukWKivt5TifidZlgHh9MRiN6/Pg7HkYsOBdhUKABWN0QepYSg6I1f8E79F9nkBFJRHJ+Q==
-  dependencies:
-    reflect-metadata "^0.1.13"
+  version "2.0.0-next.2"
+  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.0.0-next.2.tgz#2080a2278cfbbed35bff8def4246025effa8cbbb"
+  integrity sha512-JxaHeNyv8eGcSlN1PthGiBHOuoYVks7bnRBZ44j1fEQDEvWHxhuUJjwasWJ9LxOvg1b8+VoDM5JVr/pO/MpMMA==
 
 "@ditsmod/router@^2.0.0-next.0":
   version "2.0.0-next.0"
@@ -54,9 +52,9 @@
     path-to-regexp "^6.1.0"
 
 "@nestjs/common@^8.2.0":
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.2.2.tgz#44bbdd85ce7918083b04b00e2e88204cb655587a"
-  integrity sha512-Qy8GUFwV34YCw34fbFkyBi9bhDPPBacVhZMUxVUmnoqBL8GEdSpPDzW6epbl+IF1Q6TACK5L8WvTkd5V3/Eifw==
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.2.3.tgz#77ac1ef59c36dd9ae131f5c5ddabfc6258802d1c"
+  integrity sha512-slXVVMc9tZG6ZaARXkTUsSqZbkEcc0hVKb4mPLxS9mjXmDspUleGQakZ5OzniiEWqzO299BVlEbm6TGyoGbpNg==
   dependencies:
     axios "0.24.0"
     iterare "1.2.1"
@@ -64,9 +62,9 @@
     uuid "8.3.2"
 
 "@nestjs/core@^8.2.0":
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.2.2.tgz#4ad1608be81090a6e2b734f718c7e70de3826328"
-  integrity sha512-89ChFrPfePOlcEqpCYU+tExsGZTXxyieVIrRZXqxxbxhS6sf2VqF84zXK9NhVqISZdDwGmDTy+yKu0k2h/FHVA==
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.2.3.tgz#26fb3858df586b00362d1bd492ba432698590d67"
+  integrity sha512-CP/Z+uTEdblTZQXRf+xvZHvESZ6v2vxX/YaRcpJDv/ytgxxOafmOJ/RDKSzNOGBkt8kVwYNFpWXzzll4P5AJ0g==
   dependencies:
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.1.1"
@@ -77,9 +75,9 @@
     uuid "8.3.2"
 
 "@nestjs/platform-express@^8.2.0":
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.2.2.tgz#08d732c6fbcc38adbea0f0722321c460a73aab10"
-  integrity sha512-oguwjj5nZ0StC8ZakMy+lAPp8Fxnq/mmH6QXamYdMIo37UX4AsNUshaOYGTfEgO0Hp2rH0pPpkRo3/b5n59M7w==
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.2.3.tgz#8254c112658395f1e1f26e27a96538159e29f0d9"
+  integrity sha512-x8pyUpoKU8KUMYYwGiG17UXu818RUa6YCPu5Jvyq9P6G37ZfOAERYu3yveg9G5Q6YL6Z7jXAW9ojy+lWQXXhng==
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
@@ -88,9 +86,9 @@
     tslib "2.3.1"
 
 "@nestjs/platform-fastify@^8.2.0":
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-8.2.2.tgz#218af6a47e641ba1063fca7abacdc06068ce395f"
-  integrity sha512-fz7falo1FsbzAQGpfCCQEAKAdu90oZ4WtaWVBWFkCGB+y68hycUZXq5ly0TGg+HdOEgo9B3Xkpet/CRwrqa3BQ==
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-8.2.3.tgz#7680f2247863b22c4d376de8078399ffd78c36f1"
+  integrity sha512-uZelasRb99Rgq6h7QLWXlFdx8lqf3M/ln+1XzVPaWbJza4eUSo1f3BvrO4r1V/OKZLgW7pyB1CM2P4lKLMK1cA==
   dependencies:
     fastify "3.24.0"
     fastify-cors "6.0.2"
@@ -206,9 +204,9 @@
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
 "@ts-stack/di@^1.2.0-rc.3":
-  version "1.2.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@ts-stack/di/-/di-1.2.0-rc.3.tgz#c713ad016219cd526f014bc2f03c4f860cc927fa"
-  integrity sha512-ALDP9rECEd8pMA4bFPRsb7fQ1TRXhQIeY5gDCbd+zaw6Up52EhigSdOYqm28FPWL00+mCjf4aFNpgPeqWcv7Wg==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ts-stack/di/-/di-1.2.0.tgz#a389d7f9655e5d8b61b3d5e89e995e20e4b16f4c"
+  integrity sha512-uen2lcTRBK7phAMEdPKJVCw6Yr9jM31d29cwWgNHEOUCcnFwHdHq6OEkcbQ70VwPR6WgrWAY/K1GyYVQAgal/A==
 
 "@types/http-errors@^1.5.32":
   version "1.8.0"
@@ -251,9 +249,9 @@ ajv@^6.11.0, ajv@^6.12.6:
     uri-js "^4.2.2"
 
 ajv@^8.1.0:
-  version "8.8.1"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.1.tgz#e73dd88eeb4b10bbcd82bee136e6fbe801664d18"
-  integrity sha512-6CiMNDrzv0ZR916u2T+iRunnD60uWmNn8SkdB44/6stVORUg0aAkWO7PkOhpCmjmW8f2I/G/xnowD66fxGyQJg==
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
+  integrity sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -743,7 +741,14 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.0, debug@^4.3.2:
+debug@^4.0.0:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -1612,10 +1617,20 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-light-my-request@4.6.0, light-my-request@^4.2.0:
+light-my-request@4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/light-my-request/-/light-my-request-4.6.0.tgz#a647db40952e8829ec34f89acce83fce321daf6b"
   integrity sha512-wQWGwMr7l7fzYPzzzutRoEI1vuREpIpJpTi3t8cHlGdsnBrOF5iR559Bkh+nkDGgnUJtNuuutjnqbxP7zPWKkA==
+  dependencies:
+    ajv "^8.1.0"
+    cookie "^0.4.0"
+    fastify-warning "^0.2.0"
+    set-cookie-parser "^2.4.1"
+
+light-my-request@^4.2.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/light-my-request/-/light-my-request-4.7.0.tgz#5bacd17fa0eaf96fe5eed1682c5e0d361953cf46"
+  integrity sha512-LTa8YZp3K2AUpqUnwwKajoIHcsKOBnzwJNQSrk7unziPwo6CjOYjyO0F9wfkxFvP+nBsCGe3eMPnedVgIIgdAw==
   dependencies:
     ajv "^8.1.0"
     cookie "^0.4.0"
