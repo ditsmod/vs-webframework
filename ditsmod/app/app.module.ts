@@ -1,9 +1,9 @@
-import { RootModule, Router, Controller, Response, Route } from '@ditsmod/core';
+import { RootModule, Router, Controller, Res, Route } from '@ditsmod/core';
 import { DefaultRouter } from '@ditsmod/router';
 
 @Controller()
 export class HelloWorldController {
-  constructor(private res: Response) {}
+  constructor(private res: Res) {}
 
   @Route('GET', 'hello')
   tellHello() {
