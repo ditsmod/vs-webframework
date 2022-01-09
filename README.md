@@ -22,6 +22,7 @@ Here you need manually changes port in the range from 3000 to 3006.
 - `Restify`
 - `Express`
 - `Nestjs`
+- `Hapi`
 
 ![req-per-sec-frameworks.png](req-per-sec-frameworks.png)
 
