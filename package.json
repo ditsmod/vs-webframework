@@ -20,7 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ditsmod/core": "^2.0.0-beta.1",
+    "@ditsmod/core": "^2.0.0-beta.4",
     "@ditsmod/router": "^2.0.0-beta.2",
     "@hapi/hapi": "^20.2.1",
     "@koa/router": "^10.1.1",

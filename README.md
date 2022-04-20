@@ -1,6 +1,8 @@
 ## Install
 
 ```bash
+git clone https://github.com/ditsmod/vs-webframework.git
+cd vs-webframework
 npm i
 ```
 
