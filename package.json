@@ -20,8 +20,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ditsmod/core": "^2.0.0-beta.4",
-    "@ditsmod/router": "^2.0.0-beta.2",
+    "@ditsmod/core": "^2.0.0",
+    "@ditsmod/router": "^2.0.0",
     "@hapi/hapi": "^20.2.1",
     "@koa/router": "^10.1.1",
     "@nestjs/common": "^8.2.4",
