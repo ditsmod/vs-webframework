@@ -1,5 +1,5 @@
-import { RootModule, Router, Controller, Res, Route } from '@ditsmod/core';
-import { DefaultRouter } from '@ditsmod/router';
+import { RootModule, Controller, Res, Route } from '@ditsmod/core';
+import { RouterModule } from '@ditsmod/router';
 
 @Controller()
 export class HelloWorldController {
@@ -12,8 +12,8 @@ export class HelloWorldController {
 }
 
 @RootModule({
+  imports: [RouterModule],
   controllers: [HelloWorldController],
-  listenOptions: { port: 3006 },
-  providersPerApp: [{ provide: Router, useClass: DefaultRouter }],
+  listenOptions: { port: 3006 }
 })
 export class AppModule {}
