@@ -14,7 +14,9 @@
     "start:nestjs-express": "pm2 start dist/nestjs/main-express.js --name nestjs-express:3004",
     "start:nestjs-fastify": "pm2 start dist/nestjs/main-fastify.js --name nestjs-fastify:3005",
     "start:ditsmod": "pm2 start dist/ditsmod/main.js --name ditsmod:3006",
-    "start:hapi": "pm2 start hapi.js --name hapi:3007"
+    "start:hapi": "pm2 start hapi.js --name hapi:3007",
+    "start:ditsmod-dev": "nodemon -e ts --exec ts-node ditsmod/main.ts",
+    "start:nest-express-dev": "nodemon -e ts --exec ts-node nestjs/main-express.ts"
   },
   "keywords": [],
   "author": "",
@@ -39,9 +41,11 @@
   "devDependencies": {
     "@types/node": "^18.7.14",
     "get-body": "^1.0.3",
+    "nodemon": "^2.0.20",
     "pm2": "^5.1.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.3.0",
