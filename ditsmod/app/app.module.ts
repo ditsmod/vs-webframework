@@ -1,17 +1,15 @@
-import { RootModule, Controller, Res, Route } from '@ditsmod/core';
+import { rootModule, controller, Res, route } from '@ditsmod/core';
 import { RouterModule } from '@ditsmod/router';
 
-@Controller()
+@controller()
 export class HelloWorldController {
-  constructor(private res: Res) {}
-
-  @Route('GET', 'hello')
-  tellHello() {
-    this.res.send('Hello, World!');
+  @route('GET', 'hello')
+  tellHello(res: Res) {
+    res.send('Hello, World!');
   }
 }
 
-@RootModule({
+@rootModule({
   imports: [RouterModule],
   controllers: [HelloWorldController],
   listenOptions: { port: 3006 }
