@@ -1,11 +1,11 @@
-import { rootModule, controller, route, RequestContext } from '@ditsmod/core';
+import { rootModule, controller, route, Res } from '@ditsmod/core';
 import { RouterModule } from '@ditsmod/router';
 
 @controller()
 export class HelloWorldController {
   @route('GET', 'hello')
-  tellHello(ctx: RequestContext) {
-    ctx.res.send('Hello, World!');
+  tellHello(res: Res) {
+    res.send('Hello, World!');
   }
 }
 

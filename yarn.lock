@@ -30,10 +30,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@ditsmod/core@^2.34.0":
-  version "2.34.0"
-  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.34.0.tgz#85ecc0f5efe412a47396729fea1cbf541bbae45f"
-  integrity sha512-nfB/uLfqzdhH3UIgwHc1Y/HQUQi2up4M0W/a3F/lzu/n8g4EOI9oY/N69ni8BxBuYRT5oPz3uV22l9hheL6QEA==
+"@ditsmod/core@^2.35.0":
+  version "2.35.0"
+  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.35.0.tgz#00a4d728929e4f091a8217c7c541d641bdbe9b78"
+  integrity sha512-CC5P6kQs41xMJFl25s7kIXY+akrmZm8EWqza1gA68koAGCm8R+SVRBonI3S4ykqS7lniiUry7x7wnn+Inf/6NQ==
 
 "@ditsmod/router@^2.5.0":
   version "2.5.0"
