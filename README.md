@@ -1,7 +1,7 @@
 ## Install
 
 ```bash
-git clone https://github.com/ditsmod/vs-webframework.git
+git clone --depth 1 https://github.com/ditsmod/vs-webframework.git
 cd vs-webframework
 npm i
 ```
@@ -27,6 +27,14 @@ Here you need manually changes port in the range from 3000 to 3007.
 - `Hapi`
 
 ![req-per-sec-frameworks.png](req-per-sec-frameworks.png)
+
+The following command will allow you to view the status of running programs:
+
+```bash
+npx pm2 l
+```
+
+Interesting information is in the `cpu` and `mem` columns. Also in `↺` column you can see number of restarting the applications.
 
 ## Stop webservers
 
