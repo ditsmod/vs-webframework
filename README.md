@@ -34,6 +34,8 @@ The following command will allow you to view the status of running programs:
 npx pm2 l
 ```
 
+If you run this command immediately after running the benchmark, in particular you will see how much memory each of the applications is consuming.
+
 Interesting information is in the `cpu` and `mem` columns. Also in `↺` column you can see number of restarting the applications.
 
 ## Stop webservers
