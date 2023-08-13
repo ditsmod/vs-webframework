@@ -1,3 +1,5 @@
+console.time('cold-start');
+
 const restify = require('restify');
 
 var server = restify.createServer();
@@ -8,5 +10,6 @@ server.get('/hello', function (req, res, next) {
 });
 
 server.listen(3002, function() {
+  console.timeEnd('cold-start');
   console.log('Restify started on port 3002');
 });

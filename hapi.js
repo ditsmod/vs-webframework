@@ -1,4 +1,5 @@
 'use strict';
+console.time('cold-start');
 
 const Hapi = require('@hapi/hapi');
 
@@ -19,6 +20,7 @@ const init = async () => {
     });
 
     await server.start();
+    console.timeEnd('cold-start');
     console.log('Server running on %s', server.info.uri);
 };
 
