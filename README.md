@@ -18,7 +18,7 @@ The shorter the cold-start time, the better the frameworks are suited for server
 | express v4.18       |  94           |
 | fastify v4.21       |  164          |
 | hapi v21.3          |  210          |
-| restify             |  233          |
+| restify v11.1       |  233          |
 | nest 10.1 + express |  355          |
 | nest 10.1 + fastify |  410          |
 
