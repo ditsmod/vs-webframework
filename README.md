@@ -11,16 +11,16 @@ npm run build
 
 The shorter the cold-start time, the better the frameworks are suited for serverless technology. So, the results of a cold start are as follows:
 
-| framework           | result, ms    |
-|---------------------|:-------------:|
-| koa v2.14           |  69           |
-| ditsmod v2.41       |  84           |
-| express v4.18       |  94           |
-| fastify v4.21       |  164          |
-| hapi v21.3          |  210          |
-| restify v11.1       |  233          |
-| nest 10.1 + express |  355          |
-| nest 10.1 + fastify |  410          |
+| framework            | result, ms    |
+|----------------------|:-------------:|
+| koa v2.14            |  69           |
+| ditsmod v2.41        |  84           |
+| express v4.18        |  94           |
+| fastify v4.21        |  164          |
+| hapi v21.3           |  210          |
+| restify v11.1        |  233          |
+| nest v10.1 + express |  355          |
+| nest v10.1 + fastify |  410          |
 
 For now, these tests are run manually, for example:
 
