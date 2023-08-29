@@ -1,19 +1,18 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "es2019",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist",
-    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
     "baseUrl": "./",
-    // "rootDir": ".",
-    // "sourceRoot": ".",
-    // "skipLibCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": true, // https://blogs.msdn.microsoft.com/typescript/2016/12/07/announcing-typescript-2-1/
-    "declaration": true,
+    "noImplicitAny": true,
     "allowJs": false
   },
   "include": [

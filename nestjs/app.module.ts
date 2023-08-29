@@ -1,8 +1,8 @@
 import { Module, Scope } from '@nestjs/common';
 import { Controller, Get } from '@nestjs/common';
 
-// @Controller()
 @Controller({ scope: Scope.REQUEST })
+// @Controller({ scope: Scope.DEFAULT })
 export class AppController {
   @Get('/hello')
   getHello(): string {

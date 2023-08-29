@@ -13,14 +13,14 @@ The shorter the cold-start time, the better the frameworks are suited for server
 
 | framework            | result, ms    |
 |----------------------|:-------------:|
+| ditsmod v2.47        |  21           |
 | koa v2.14            |  69           |
-| ditsmod v2.41        |  84           |
 | express v4.18        |  94           |
-| fastify v4.21        |  164          |
+| fastify v4.22        |  164          |
 | hapi v21.3           |  210          |
 | restify v11.1        |  233          |
-| nest v10.1 + express |  355          |
-| nest v10.1 + fastify |  410          |
+| nest v10.2 + express |  355          |
+| nest v10.2 + fastify |  410          |
 
 For now, these tests are run manually, for example:
 

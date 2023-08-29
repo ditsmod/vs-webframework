@@ -11,7 +11,6 @@ export class HelloWorldController {
 
 @rootModule({
   imports: [RouterModule],
-  controllers: [HelloWorldController],
-  listenOptions: { port: 3006 }
+  controllers: [HelloWorldController]
 })
 export class AppModule {}
