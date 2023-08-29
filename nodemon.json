@@ -1,6 +1,0 @@
-{
-  "events": {
-    "start": "clear"
-  },
-  "ignore": ["*.spec.ts", "packages/openapi/src/swagger-ui/swagger.config.ts"]
-}
