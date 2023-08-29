@@ -27,7 +27,7 @@ For now, these tests are run manually, for example:
 ```bash
 node koa.js
 # OR
-node dist/ditsmod/main.js
+node dist/ditsmod/main.mjs
 # OR
 node dist/nestjs/main-express.js
 # ...
