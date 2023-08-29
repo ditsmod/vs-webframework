@@ -6,5 +6,5 @@
     "moduleResolution": "nodenext",
     "outDir": "../dist/ditsmod"
   },
-  "include": ["./**/*.ts", "main.mts", "app/app.module.mts"]
+  "include": ["./**/*.mts"]
 }
