@@ -22,12 +22,12 @@ The shorter the cold-start time, the better the frameworks are suited for server
 | nest v10.2 + express |  355          |
 | nest v10.2 + fastify |  410          |
 
-For now, these tests are run manually, for example:
+For now, this benchmark is run manually, for example:
 
 ```bash
-node koa.js
-# OR
 node dist/ditsmod/main.mjs
+# OR
+node koa.js
 # OR
 node dist/nestjs/main-express.js
 # ...
