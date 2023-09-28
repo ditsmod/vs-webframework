@@ -40,6 +40,8 @@ See `package.json` for more examples with start script.
 ```bash
 npm start
 ab -n 50000 -c 10 localhost:3000/hello
+# OR
+wrk -d10 -H 'Connection: close' http://localhost:3000/hello
 ```
 
 Here you need manually changes port in the range from 3000 to 3007.
