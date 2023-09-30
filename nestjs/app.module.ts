@@ -1,16 +1,22 @@
-import { Module, Scope } from '@nestjs/common';
-import { Controller, Get } from '@nestjs/common';
+import { Module, Scope, Controller, Get } from '@nestjs/common';
 
-// @Controller({ scope: Scope.REQUEST })
 @Controller({ scope: Scope.DEFAULT })
-export class AppController {
+export class SingletonController {
   @Get('/hello')
   getHello(): string {
     return 'Hello, World!';
   }
 }
 
+@Controller({ scope: Scope.REQUEST })
+export class PerRequestController {
+  @Get('/hello2')
+  getHello(): string {
+    return 'Hello, World!';
+  }
+}
+
 @Module({
-  controllers: [AppController],
+  controllers: [SingletonController, PerRequestController],
 })
 export class AppModule {}

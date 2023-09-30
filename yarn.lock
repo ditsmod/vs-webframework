@@ -23,19 +23,19 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@ditsmod/core@^2.49.1":
-  version "2.49.1"
-  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.49.1.tgz#0d15dcc350ac64fd6848d0b8e78f396d9dd76a0d"
-  integrity sha512-3OtxvIgaMdYbPo2TvPvz3zF4W/p66Kr/+Ao2EFNuMNU24smRBanOw8ixcdw5R3YmUE9hzEVcOtwhxscCOclD5Q==
+"@ditsmod/core@^2.50.0":
+  version "2.50.0"
+  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.50.0.tgz#8b6c2c35d6b4bee9b7f44ae3e2e1a4b09c2a468a"
+  integrity sha512-O7T1HkpgB6dMySp0AHLwRTi0juN3irSpogsO2ZtMXS6xLHMY1XNMYU5fY9kmBgfY1e+F30d4Zjk7bbgoNNVeWw==
   dependencies:
     "@ts-stack/chain-error" "^1.2.0"
     "@ts-stack/stack-utils" "^1.1.0"
     reflect-metadata "^0.1.13"
 
-"@ditsmod/router@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@ditsmod/router/-/router-2.7.1.tgz#e0d726ed90e30af441f88371b6e6f58e2d1c5964"
-  integrity sha512-SM3txXwnncg4ryLziGubGm14Q2jVStsKagAOei6Td6s9/E9tosOSGa7+KVamafTs8XC+3TN5bXi9BgTbnz+Ndg==
+"@ditsmod/routing@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ditsmod/routing/-/routing-2.0.0.tgz#8b564d11b4b8723b75760204ac943075fb9f03eb"
+  integrity sha512-8BqoVgr7vIMFAkCS2LhBOd8SwqoJoNB71Lk6RuzerKN33Dw38hob9cvEnRYxjONT9SkU+31nuNAb7IIfObs5xA==
 
 "@fastify/ajv-compiler@^3.5.0":
   version "3.5.0"

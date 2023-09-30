@@ -41,7 +41,7 @@ See `package.json` for more examples with start script.
 npm start
 ab -n 50000 -c 10 localhost:3000/hello
 # OR
-wrk -d10 -H 'Connection: close' http://localhost:3000/hello
+wrk -t1 -c10 -d3 -H 'Connection: close' http://localhost:3006/hello
 ```
 
 Here you need manually changes port in the range from 3000 to 3007.
@@ -68,6 +68,12 @@ npx pm2 l
 If you run this command immediately after running the benchmark, in particular you will see how much memory each of the applications is consuming.
 
 Interesting information is in the `cpu` and `mem` columns. Also in `↺` column you can see number of restarting the applications.
+
+In addition, you can also check the work of Ditsmod and NestJS with controllers that are created "per request". To do this, request for the path `/hello2`, for example:
+
+```bash
+wrk -t1 -c10 -d3 -H 'Connection: close' http://localhost:3006/hello2
+```
 
 ## Stop webservers
 

@@ -14,14 +14,15 @@
     "start:nestjs-express": "pm2 start dist/nestjs/main-express.js --name nestjs-express:3004",
     "start:nestjs-fastify": "pm2 start dist/nestjs/main-fastify.js --name nestjs-fastify:3005",
     "start:ditsmod": "pm2 start dist/ditsmod/main.mjs --name ditsmod:3006",
-    "start:hapi": "pm2 start hapi.js --name hapi:3007"
+    "start:hapi": "pm2 start hapi.js --name hapi:3007",
+    "clean": "rm -rf dist/*"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ditsmod/core": "^2.49.1",
-    "@ditsmod/router": "^2.7.1",
+    "@ditsmod/core": "^2.50.0",
+    "@ditsmod/routing": "^2.0.0",
     "@hapi/hapi": "^21.3.2",
     "@koa/router": "^12.0.0",
     "@nestjs/common": "^10.2.2",

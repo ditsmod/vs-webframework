@@ -1,8 +1,16 @@
-import { rootModule, controller, route, Res, Router } from '@ditsmod/core';
-import { RouterModule } from '@ditsmod/router';
+import { rootModule, controller, route, Res, RequestContext } from '@ditsmod/core';
+import { RoutingModule } from '@ditsmod/routing';
+
+@controller({ isSingleton: true })
+export class SingletonController {
+  @route('GET', 'hello')
+  tellHello(ctx: RequestContext) {
+    ctx.nodeRes.end('Hello, World!');
+  }
+}
 
 @controller()
-export class HelloWorldController {
+export class PerRequestController {
   @route('GET', 'hello2')
   tellHello(res: Res) {
     res.send('Hello, World!');
@@ -10,13 +18,7 @@ export class HelloWorldController {
 }
 
 @rootModule({
-  imports: [RouterModule],
-  controllers: [HelloWorldController]
+  imports: [RoutingModule],
+  controllers: [SingletonController, PerRequestController]
 })
-export class AppModule {
-  constructor(router: Router) {
-    router.on('GET', '/hello', async (nodeReq, nodeRes, aPathParams, queryString) => {
-      nodeRes.end('Hello, World!');
-    });
-  }
-}
+export class AppModule {}
