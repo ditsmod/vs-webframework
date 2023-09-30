@@ -57,7 +57,7 @@ Here you need manually changes port in the range from 3000 to 3007.
 - `Nestjs + Fastify`
 - `Hapi`
 
-![req-per-sec-frameworks1.png](req-per-sec-frameworks2.png)
+![req-per-sec-frameworks1.png](req-per-sec-frameworks3.png)
 
 The following command will allow you to view the status of running programs:
 
