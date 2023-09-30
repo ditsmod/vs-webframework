@@ -39,9 +39,9 @@ See `package.json` for more examples with start script.
 
 ```bash
 npm start
-ab -n 50000 -c 10 localhost:3000/hello
+ab -n 20000 -c 10 localhost:3000/hello
 # OR
-wrk -t1 -c10 -d3 -H 'Connection: close' http://localhost:3006/hello
+wrk -t1 -c10 -d5 -H 'Connection: close' http://localhost:3006/hello
 ```
 
 Here you need manually changes port in the range from 3000 to 3007.
@@ -57,7 +57,7 @@ Here you need manually changes port in the range from 3000 to 3007.
 - `Nestjs + Fastify`
 - `Hapi`
 
-![req-per-sec-frameworks1.png](req-per-sec-frameworks1.png)
+![req-per-sec-frameworks1.png](req-per-sec-frameworks2.png)
 
 The following command will allow you to view the status of running programs:
 
