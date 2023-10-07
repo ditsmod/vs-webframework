@@ -4,6 +4,8 @@
     "target": "es2022",
     "module": "nodenext",
     "moduleResolution": "nodenext",
+    "incremental": true,
+    "tsBuildInfoFile": "../dist/ditsmod/build.tsbuildinfo",
     "outDir": "../dist/ditsmod"
   },
   "include": ["./**/*.mts"]

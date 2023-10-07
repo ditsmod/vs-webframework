@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "yarn start:express && yarn start:koa && yarn start:restify && yarn start:fastify && yarn start:nestjs-express && yarn start:nestjs-fastify && yarn start:ditsmod && yarn start:hapi",
-    "build": "rimraf dist/* && tsc -p ditsmod/tsconfig.json && tsc -p nestjs/tsconfig.json",
+    "build": "tsc -b ditsmod/tsconfig.json && tsc -b nestjs/tsconfig.json",
     "stop": "pm2 delete all",
     "start:express": "pm2 start express.js --name express:3000",
     "start:koa": "pm2 start koa.js --name koa:3001",
