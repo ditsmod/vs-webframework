@@ -5,7 +5,8 @@ import { RoutingModule } from '@ditsmod/routing';
 export class SingletonController {
   @route('GET', 'hello')
   tellHello(ctx: RequestContext) {
-    ctx.send('Hello, World!');
+    ctx.nodeRes.setHeader('Content-Type', 'text/plain; charset=utf-8')
+    ctx.nodeRes.end('Hello, World!');
   }
 }
 
