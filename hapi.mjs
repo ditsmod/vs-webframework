@@ -1,7 +1,7 @@
 'use strict';
 console.time('cold-start');
 
-const Hapi = require('@hapi/hapi');
+import Hapi from '@hapi/hapi';
 
 const init = async () => {
 

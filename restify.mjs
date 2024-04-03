@@ -1,15 +1,15 @@
 console.time('cold-start');
 
-const restify = require('restify');
+import restify from 'restify';
 
-var server = restify.createServer();
+const server = restify.createServer({ name: '' });
 server.get('/hello', function (req, res, next) {
   res.setHeader('content-type', 'text/plain');
   res.send('Hello, World!');
   next();
 });
 
-server.listen(3002, function() {
+server.listen(3002, function () {
   console.timeEnd('cold-start');
   console.log('Restify started on port 3002');
 });
