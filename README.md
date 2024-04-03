@@ -7,20 +7,22 @@ npm i
 npm run build
 ```
 
+All applications are built in ESM format, `keepAliveTimeout: 5000` is set, and generation of additional headers is disabled.
+
 ## Cold start
 
 The shorter the cold-start time, the better the frameworks are suited for serverless technology. So, the results of a cold start are as follows:
 
 | framework            | result, ms    |
 |----------------------|:-------------:|
-| ditsmod v2.47        |  21           |
-| koa v2.14            |  69           |
-| express v4.18        |  94           |
-| fastify v4.22        |  164          |
-| hapi v21.3           |  210          |
-| restify v11.1        |  233          |
-| nest v10.2 + express |  355          |
-| nest v10.2 + fastify |  410          |
+| express v4.18        |  4            |
+| koa v2.14            |  4            |
+| restify v11.1        |  8            |
+| ditsmod v2.47        |  18           |
+| fastify v4.22        |  22           |
+| hapi v21.3           |  23           |
+| nest v10.2 + fastify |  45           |
+| nest v10.2 + express |  107          |
 
 For now, this benchmark is run manually, for example:
 
@@ -57,7 +59,7 @@ Here you need manually changes port in the range from 3000 to 3007.
 - `Nestjs + Fastify`
 - `Hapi`
 
-![req-per-sec-frameworks1.png](req-per-sec-frameworks3.png)
+![req-per-sec-frameworks1.png](req-per-sec-frameworks4.png)
 
 The following command will allow you to view the status of running programs:
 
