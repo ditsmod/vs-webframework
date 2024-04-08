@@ -6,7 +6,7 @@ import { AppModule } from './app.module.mjs';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter(), { logger: false });
-  app.getHttpAdapter().getInstance().server.keepAliveTimeout = 5000;
+  app.getHttpServer().keepAliveTimeout = 5000;
   await app.listen(3005, () => {
     console.timeEnd('cold-start');
     console.log('Nestjs started on port 3005');
