@@ -2,6 +2,7 @@ console.time('cold-start');
 
 import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
+
 import { AppModule } from './app.module.mjs';
 
 async function bootstrap() {

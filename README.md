@@ -29,9 +29,9 @@ For now, this benchmark is run manually, for example:
 ```bash
 node dist/ditsmod/main.mjs
 # OR
-node koa.js
+node koa.mjs
 # OR
-node dist/nestjs/main-express.js
+node dist/nestjs/main-express.mjs
 # ...
 ```
 
