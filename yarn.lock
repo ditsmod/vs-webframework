@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@ditsmod/core@^2.54.0":
-  version "2.54.0"
-  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.54.0.tgz#4a64355f6c8a66b2e4791bb699f0d76b01cc71fe"
-  integrity sha512-zWXlFlzSMj28/Qa+lGrS5FeySKxRYwLez4T78uk0KwxhgtPdlaSlSCtYtvXcTnnGy9noT67QJG8quHml9qnyBg==
+"@ditsmod/core@^2.54.2":
+  version "2.54.2"
+  resolved "https://registry.yarnpkg.com/@ditsmod/core/-/core-2.54.2.tgz#c0ba77577a7dc53bd110235aeea10324ca7f90b8"
+  integrity sha512-RQAJV8VP0cgh4i3mb8ZcNaJ6fKZ1Fe1TcDkoxx+0BlhqedqBo4DINqJhqXmsb1YxSBYJUAeqHnTqSaMHkTK73Q==
   dependencies:
     "@ts-stack/chain-error" "^1.2.0"
     "@ts-stack/stack-utils" "^1.1.0"
@@ -353,7 +353,7 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
-"@koa/router@^12.0.0":
+"@koa/router@^12.0.1":
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/@koa/router/-/router-12.0.1.tgz#1a66f92a630c02832cf5bbf0db06c9e53e423468"
   integrity sha512-ribfPYfHb+Uw3b27Eiw6NPqjhIhTpVFzEWLwyc/1Xp+DCdwRRyIlAUODX+9bPARF6aQtUu1+/PHzdNvRzcs/+Q==
@@ -369,19 +369,19 @@
   resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.1.0.tgz#1e3e4bd05c1cc7a0b2ddbd8a03f39f6e4b5e6cfe"
   integrity sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==
 
-"@nestjs/common@^10.3.10":
-  version "10.3.10"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.3.10.tgz#d8825d55a50a04e33080c9188e6a5b03235d19f2"
-  integrity sha512-H8k0jZtxk1IdtErGDmxFRy0PfcOAUg41Prrqpx76DQusGGJjsaovs1zjXVD1rZWaVYchfT1uczJ6L4Kio10VNg==
+"@nestjs/common@^10.4.1":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.4.1.tgz#6f8aab84eebe7a4574134dcd9bf7f0129df393f6"
+  integrity sha512-4CkrDx0s4XuWqFjX8WvOFV7Y6RGJd0P2OBblkhZS7nwoctoSuW5pyEa8SWak6YHNGrHRpFb6ymm5Ai4LncwRVA==
   dependencies:
     uid "2.0.2"
     iterare "1.2.1"
     tslib "2.6.3"
 
-"@nestjs/core@^10.3.10":
-  version "10.3.10"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.3.10.tgz#508090c3ca36488a8e24a9e5939c2f37426e48f4"
-  integrity sha512-ZbQ4jovQyzHtCGCrzK5NdtW1SYO2fHSsgSY1+/9WdruYCUra+JDkWEXgZ4M3Hv480Dl3OXehAmY1wCOojeMyMQ==
+"@nestjs/core@^10.4.1":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.4.1.tgz#55dd1be59dae380cde8a19288926fcf8423dd4cf"
+  integrity sha512-9I1WdfOBCCHdUm+ClBJupOuZQS6UxzIWHIq6Vp1brAA5ZKl/Wq6BVwSsbnUJGBy3J3PM2XHmR0EQ4fwX3nR7lA==
   dependencies:
     uid "2.0.2"
     "@nuxtjs/opencollective" "0.3.2"
@@ -390,10 +390,10 @@
     path-to-regexp "3.2.0"
     tslib "2.6.3"
 
-"@nestjs/platform-express@^10.3.10":
-  version "10.3.10"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.3.10.tgz#45fa006605913d5aaa31bf99073136ad639939b4"
-  integrity sha512-wK2ow3CZI2KFqWeEpPmoR300OB6BcBLxARV1EiClJLCj4S1mZsoCmS0YWgpk3j1j6mo0SI8vNLi/cC2iZPEPQA==
+"@nestjs/platform-express@^10.4.1":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.4.1.tgz#65d3b5a08c79b938a50464887408f78ce5d5932c"
+  integrity sha512-ccfqIDAq/bg1ShLI5KGtaLaYGykuAdvCi57ohewH7eKJSIpWY1DQjbgKlFfXokALYUq1YOMGqjeZ244OWHfDQg==
   dependencies:
     body-parser "1.20.2"
     cors "2.8.5"
@@ -401,15 +401,15 @@
     multer "1.4.4-lts.1"
     tslib "2.6.3"
 
-"@nestjs/platform-fastify@^10.3.10":
-  version "10.3.10"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-10.3.10.tgz#edde9ee4b768b4222ea2cc469a8e6290eec76c8d"
-  integrity sha512-waNyUl4N/sRDPdEgJyhn+k0lS3ZpaDXRPjJVlDhlwOPGN38hMIGRjs+Gwz4pXqA5CP9PLuptMtHAWkb2m8I/nA==
+"@nestjs/platform-fastify@^10.4.1":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-10.4.1.tgz#f56675e918a15fdc62fcbe44198985d12c21267d"
+  integrity sha512-e7bpAF6MAB71MxzeqLBVXSiYNNcx2vkG8tEXnY08Mr2Qp922Ya1AQta5xVQ5avYep3wy98bhJVeoEN7h65xh8w==
   dependencies:
     "@fastify/cors" "9.0.1"
     "@fastify/formbody" "7.4.0"
     "@fastify/middie" "8.3.1"
-    fastify "4.28.0"
+    fastify "4.28.1"
     light-my-request "5.13.0"
     path-to-regexp "3.2.0"
     tslib "2.6.3"
@@ -636,10 +636,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@^22.1.0":
-  version "22.1.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.1.0.tgz#6d6adc648b5e03f0e83c78dc788c2b037d0ad94b"
-  integrity sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==
+"@types/node@^22.2.0":
+  version "22.2.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.2.0.tgz#7cf046a99f0ba4d628ad3088cb21f790df9b0c5b"
+  integrity sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==
   dependencies:
     undici-types "~6.13.0"
 
@@ -1555,29 +1555,7 @@ fastify-plugin@^4.0.0:
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.1.tgz#44dc6a3cc2cce0988bc09e13f160120bbd91dbee"
   integrity sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==
 
-fastify@4.28.0:
-  version "4.28.0"
-  resolved "https://registry.yarnpkg.com/fastify/-/fastify-4.28.0.tgz#322152722e2ed207cbef73ed177214bb3284058c"
-  integrity sha512-HhW7UHW07YlqH5qpS0af8d2Gl/o98DhJ8ZDQWHRNDnzeOhZvtreWsX8xanjGgXmkYerGbo8ax/n40Dpwqkot8Q==
-  dependencies:
-    "@fastify/ajv-compiler" "^3.5.0"
-    "@fastify/error" "^3.4.0"
-    "@fastify/fast-json-stringify-compiler" "^4.3.0"
-    abstract-logging "^2.0.1"
-    avvio "^8.3.0"
-    fast-content-type-parse "^1.1.0"
-    fast-json-stringify "^5.8.0"
-    find-my-way "^8.0.0"
-    light-my-request "^5.11.0"
-    pino "^9.0.0"
-    process-warning "^3.0.0"
-    proxy-addr "^2.0.7"
-    rfdc "^1.3.0"
-    secure-json-parse "^2.7.0"
-    semver "^7.5.4"
-    toad-cache "^3.3.0"
-
-fastify@^4.28.1:
+fastify@4.28.1, fastify@^4.28.1:
   version "4.28.1"
   resolved "https://registry.yarnpkg.com/fastify/-/fastify-4.28.1.tgz#39626dedf445d702ef03818da33064440b469cd1"
   integrity sha512-kFWUtpNr4i7t5vY2EJPCN2KgMVpuqfU4NjnJNCgiNB900oiDeYqaNDRcAfeBbOF5hGixixxcKnOU4KN9z6QncQ==
@@ -3427,9 +3405,9 @@ tslint-plugin-prettier@^2.3.0:
     lines-and-columns "^1.1.6"
     tslib "^1.7.1"
 
-tslint@^6.1.2:
+tslint@^6.1.3:
   version "6.1.3"
-  resolved "https://registry.npmjs.org/tslint/-/tslint-6.1.3.tgz"
+  resolved "https://registry.yarnpkg.com/tslint/-/tslint-6.1.3.tgz#5c23b2eccc32487d5523bd3a470e9aa31789d904"
   integrity sha512-IbR4nkT96EQOvKE2PW/djGz8iGNeJ4rF2mBfiYaR/nvUWYKJhLwimoJKgjIFEIDibBtOevj7BqCRL4oHeWWUCg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
