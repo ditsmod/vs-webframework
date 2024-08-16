@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "incremental": true,
+    "tsBuildInfoFile": "../dist/elysia/build.tsbuildinfo",
+    "outDir": "../dist/elysia"
+  },
+  "include": ["./**/*.mts"]
+}

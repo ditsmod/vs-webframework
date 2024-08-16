@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "yarn express && yarn koa && yarn restify && yarn fastify && yarn nestjs-express && yarn nestjs-fastify && yarn ditsmod && yarn hapi",
-    "build": "tsc -b ditsmod/tsconfig.json && tsc -b nestjs/tsconfig.json",
+    "build": "tsc -b ditsmod/tsconfig.json nestjs/tsconfig.json elysia/tsconfig.json",
     "stop": "pm2 delete all",
     "express": "pm2 start express.mjs --name express:3000",
     "koa": "pm2 start koa.mjs --name koa:3001",
@@ -15,9 +15,11 @@
     "nestjs-fastify": "pm2 start dist/nestjs/main-fastify.mjs --name nestjs-fastify:3005",
     "ditsmod": "pm2 start dist/ditsmod/main.mjs --name ditsmod:3006",
     "ditsmod-bun": "yarn prepare-ditsmod-for-bun && pm2 start --interpreter ~/.bun/bin/bun dist/ditsmod/main.mjs --name ditsmod:3006",
+    "elysia-bun": "pm2 start --interpreter ~/.bun/bin/bun elysia/main.mts --name elysia:3008",
     "hapi": "pm2 start hapi.mjs --name hapi:3007",
     "prepare-ditsmod-for-bun": "rimraf node_modules/@ditsmod/*/tsconfig.json",
-    "clean": "rm -rf dist/*"
+    "clean": "rm -rf dist/*",
+    "postinstall": "bun prepare-ditsmod-for-bun"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +34,7 @@
     "@nestjs/platform-express": "^10.4.1",
     "@nestjs/platform-fastify": "^10.4.1",
     "@ts-stack/chain-error": "^1.2.0",
+    "elysia": "^1.1.6",
     "express": "^4.19.2",
     "fastify": "^4.28.1",
     "koa": "^2.15.3",
@@ -39,6 +42,7 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
+    "@types/bun": "^1.1.6",
     "@types/koa": "^2.15.0",
     "@types/koa__router": "^12.0.4",
     "@types/node": "^22.2.0",

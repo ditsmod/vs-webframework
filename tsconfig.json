@@ -13,11 +13,13 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
-    "allowJs": false
+    "allowJs": false,
+    "skipLibCheck": true
   },
   "include": [
     "nestjs",
     "ditsmod",
+    "elysia",
   ],
   "compileOnSave": false,
   "buildOnSave": false,
