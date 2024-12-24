@@ -7,7 +7,7 @@ npm i
 npm run build
 ```
 
-All applications are built in ESM format, `keepAliveTimeout: 5000` is set, and generation of additional headers is disabled.
+All applications are built in ESM format, `keepAliveTimeout: 0` is set, and generation of additional headers is disabled.
 
 ## Cold start
 
@@ -18,9 +18,9 @@ The shorter the cold-start time, the better the frameworks are suited for server
 | express v4.19        |  4            |
 | koa v2.15            |  4            |
 | restify v11.1        |  8            |
-| ditsmod v2.52        |  18           |
 | fastify v4.26        |  22           |
 | hapi v21.3           |  23           |
+| ditsmod v3.0         |  30           |
 | nest v10.3 + fastify |  45           |
 | nest v10.3 + express |  107          |
 

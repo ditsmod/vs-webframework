@@ -1,12 +1,11 @@
-import { rootModule, controller, route, Res, RequestContext } from '@ditsmod/core';
-import { RoutingModule } from '@ditsmod/routing';
+import { rootModule, controller, SingletonRequestContext, Res } from '@ditsmod/core';
+import { RoutingModule, route } from '@ditsmod/routing';
 
-@controller({ isSingleton: true })
+@controller({ scope: 'module' })
 export class SingletonController {
   @route('GET', 'hello')
-  tellHello(ctx: RequestContext) {
-    ctx.nodeRes.setHeader('Content-Type', 'text/plain; charset=utf-8')
-    ctx.nodeRes.end('Hello, World!');
+  tellHello(ctx: SingletonRequestContext) {
+    ctx.send('Hello, World!');
   }
 }
 
