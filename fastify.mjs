@@ -1,7 +1,7 @@
 console.time('cold-start');
 
 import Fastify from 'fastify';
-const fastify = Fastify({ logger: false, keepAliveTimeout: 5000 });
+const fastify = Fastify({ logger: false, keepAliveTimeout: 0 });
 
 fastify.get('/hello', function (req, reply) {
   reply.send('Hello, World!');

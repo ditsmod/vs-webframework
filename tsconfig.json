@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "strict": true,
+    "types": ["node"],
     "target": "es2019",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "outDir": "dist",
     "declaration": false,
     "declarationMap": false,
     "sourceMap": false,
-    "baseUrl": "./",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
@@ -17,8 +17,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "nestjs",
     "ditsmod",
+    "nestjs",
     "elysia",
   ],
   "compileOnSave": false,

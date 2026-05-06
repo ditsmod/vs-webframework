@@ -3,3 +3,4 @@ dist*
 *.tgz
 *.log
 sync.sh
+.yarn/*

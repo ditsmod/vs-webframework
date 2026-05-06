@@ -1,10 +1,9 @@
-import { rootModule, controller, SingletonRequestContext, Res } from '@ditsmod/core';
-import { RoutingModule, route } from '@ditsmod/routing';
+import { restRootModule, controller, RequestContext, Res, route } from '@ditsmod/rest';
 
-@controller({ scope: 'module' })
+@controller({ scope: 'ctx' })
 export class SingletonController {
   @route('GET', 'hello')
-  tellHello(ctx: SingletonRequestContext) {
+  tellHello(ctx: RequestContext) {
     ctx.send('Hello, World!');
   }
 }
@@ -17,8 +16,7 @@ export class PerRequestController {
   }
 }
 
-@rootModule({
-  imports: [RoutingModule],
+@restRootModule({
   controllers: [SingletonController, PerRequestController]
 })
 export class AppModule {}

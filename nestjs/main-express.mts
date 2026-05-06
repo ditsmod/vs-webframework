@@ -8,7 +8,7 @@ import { AppModule } from './app.module.mjs';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, { logger: false });
   app.getHttpAdapter().getInstance().set('etag', false).set('x-powered-by', false);
-  app.getHttpServer().keepAliveTimeout = 5000;
+  app.getHttpServer().keepAliveTimeout = 0;
   await app.listen(3004, () => {
     console.timeEnd('cold-start');
     console.log('Nestjs started on port 3004');
