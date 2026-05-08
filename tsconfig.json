@@ -19,7 +19,6 @@
   "include": [
     "ditsmod",
     "nestjs",
-    "elysia",
   ],
   "compileOnSave": false,
   "buildOnSave": false,

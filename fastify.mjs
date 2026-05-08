@@ -7,7 +7,8 @@ fastify.get('/hello', function (req, reply) {
   reply.send('Hello, World!');
 });
 
-fastify.listen({ port: 3003 }, () => {
+const port = 3000;
+fastify.listen({ port }, () => {
   console.timeEnd('cold-start');
-  fastify.log.info(`Fastify listening on 3003`);
+  fastify.log.info(`Fastify listening on port`);
 });

@@ -11,7 +11,8 @@ router.get('/hello', async function(ctx) {
 
 app.use(router.routes());
 
-app.listen(3001, () => {
+const port = 3000;
+app.listen(port, () => {
   console.timeEnd('cold-start');
-  console.log('Koa started on port 3001');
+  console.log(`Koa started on port ${port}`);
 });

@@ -7,7 +7,7 @@ npm i
 npm run build
 ```
 
-All applications are built in ESM format, `keepAliveTimeout: 0` is set, and generation of additional headers is disabled.
+All applications are built in ESM format and `keepAliveTimeout: 0` is set.
 
 ## Cold start
 
@@ -15,14 +15,13 @@ The shorter the cold-start time, the better the frameworks are suited for server
 
 | framework            | result, ms    |
 |----------------------|:-------------:|
-| express v4.19        |  4            |
 | koa v2.15            |  4            |
-| restify v11.1        |  8            |
-| fastify v4.26        |  22           |
-| hapi v21.3           |  23           |
+| express v4.19        |  5            |
+| hapi v21.3           |  22           |
 | ditsmod v3.0         |  30           |
-| nest v10.3 + fastify |  45           |
-| nest v10.3 + express |  107          |
+| fastify v4.26        |  67           |
+| nest v10.3 + fastify |  89           |
+| nest v10.3 + express |  108          |
 
 For now, this benchmark is run manually, for example:
 
@@ -39,46 +38,34 @@ See `package.json` for more examples with start script.
 
 ## Run benchmarks
 
-```bash
-npm start
-ab -n 20000 -c 10 localhost:3000/hello
-# OR
-wrk -t1 -c10 -d5 -H 'Connection: close' http://localhost:3006/hello
-```
+From first terminal:
 
-Here you need manually changes port in the range from 3000 to 3007.
+```bash
+npm run ditsmod
+```
 
 "Hello, World!" performance comparison for web frameworks:
 
-- `Fastify`
-- `Ditsmod`
-- `Koa`
-- `Restify`
-- `Express`
-- `Nestjs + Express`
-- `Nestjs + Fastify`
-- `Hapi`
+- `ditsmod`
+- `fastify`
+- `koa`
+- `express`
+- `nestjs-express`
+- `nestjs-fastify`
+- `hapi`
+
+From second terminal:
+
+```bash
+wrk -t1 -c10 -d5 -H 'Connection: close' http://localhost:3000/hello
+```
+
+
 
 ![req-per-sec-frameworks1.png](req-per-sec-frameworks4.png)
 
-The following command will allow you to view the status of running programs:
+You can also check the work of Ditsmod and NestJS with controllers that are created "per request". To do this, request for the path `/hello2`, for example:
 
 ```bash
-npx pm2 l
-```
-
-If you run this command immediately after running the benchmark, in particular you will see how much memory each of the applications is consuming.
-
-Interesting information is in the `cpu` and `mem` columns. Also in `↺` column you can see number of restarting the applications.
-
-In addition, you can also check the work of Ditsmod and NestJS with controllers that are created "per request". To do this, request for the path `/hello2`, for example:
-
-```bash
-wrk -t1 -c10 -d3 -H 'Connection: close' http://localhost:3006/hello2
-```
-
-## Stop webservers
-
-```bash
-npm run stop
+wrk -t1 -c10 -d3 -H 'Connection: close' http://localhost:3000/hello2
 ```

@@ -8,9 +8,10 @@ import { AppModule } from './app.module.mjs';
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter(), { logger: false });
   app.getHttpServer().keepAliveTimeout = 0;
-  await app.listen(3005, () => {
+  const port = 3000;
+  await app.listen(port, () => {
     console.timeEnd('cold-start');
-    console.log('Nestjs started on port 3005');
+    console.log(`Nestjs started on port ${port}`);
   });
 }
 bootstrap();

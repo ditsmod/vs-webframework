@@ -9,9 +9,10 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, { logger: false });
   app.getHttpAdapter().getInstance().set('etag', false).set('x-powered-by', false);
   app.getHttpServer().keepAliveTimeout = 0;
-  await app.listen(3004, () => {
+  const port = 3000;
+  await app.listen(port, () => {
     console.timeEnd('cold-start');
-    console.log('Nestjs started on port 3004');
+    console.log(`Nestjs started on port ${port}`);
   });
 }
 bootstrap();
