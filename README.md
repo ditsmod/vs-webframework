@@ -57,7 +57,7 @@ npm run ditsmod
 From second terminal:
 
 ```bash
-wrk -t1 -c10 -d5 -H 'Connection: close' http://localhost:3000/hello
+wrk -t4 -c20 -d30 -H 'Connection: close' http://localhost:3000/hello
 ```
 
 
@@ -67,5 +67,5 @@ wrk -t1 -c10 -d5 -H 'Connection: close' http://localhost:3000/hello
 You can also check the work of Ditsmod and NestJS with controllers that are created "per request". To do this, request for the path `/hello2`, for example:
 
 ```bash
-wrk -t1 -c10 -d3 -H 'Connection: close' http://localhost:3000/hello2
+wrk -t4 -c20 -d30 -H 'Connection: close' http://localhost:3000/hello2
 ```
