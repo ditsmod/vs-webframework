@@ -1,6 +1,6 @@
 console.time('cold-start');
 
-import { RestApplication } from '@ditsmod/rest';
+import { RestApplication } from '@holu/rest';
 import { AppModule } from './app/app.module.mjs';
 
 const app = await RestApplication.create(AppModule, { serverOptions: { keepAliveTimeout: 0 } });

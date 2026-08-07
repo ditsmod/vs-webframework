@@ -1,7 +1,7 @@
 ## Install and build
 
 ```bash
-git clone --depth 1 https://github.com/ditsmod/vs-webframework.git
+git clone --depth 1 https://github.com/holujs/vs-webframework.git
 cd vs-webframework
 npm i
 npm run build
@@ -18,7 +18,7 @@ The shorter the cold-start time, the better the frameworks are suited for server
 | koa v2.15            |  4            |
 | express v4.19        |  5            |
 | hapi v21.3           |  22           |
-| ditsmod v3.0         |  30           |
+| holu v0.1            |  30           |
 | fastify v4.26        |  67           |
 | nest v10.3 + fastify |  89           |
 | nest v10.3 + express |  108          |
@@ -26,7 +26,7 @@ The shorter the cold-start time, the better the frameworks are suited for server
 For now, this benchmark is run manually, for example:
 
 ```bash
-node dist/ditsmod/main.mjs
+node dist/holu/main.mjs
 # OR
 node koa.mjs
 # OR
@@ -41,12 +41,12 @@ See `package.json` for more examples with start script.
 From first terminal:
 
 ```bash
-npm run ditsmod
+npm run holu
 ```
 
 "Hello, World!" performance comparison for web frameworks:
 
-- `ditsmod`
+- `holu`
 - `fastify`
 - `koa`
 - `express`
@@ -64,7 +64,7 @@ wrk -t4 -c20 -d30 -H 'Connection: close' http://localhost:3000/hello
 
 ![req-per-sec-frameworks1.png](req-per-sec-frameworks4.png)
 
-You can also check the work of Ditsmod and NestJS with controllers that are created "per request". To do this, request for the path `/hello2`, for example:
+You can also check the work of Holu and NestJS with controllers that are created "per request". To do this, request for the path `/hello2`, for example:
 
 ```bash
 wrk -t4 -c20 -d30 -H 'Connection: close' http://localhost:3000/hello2

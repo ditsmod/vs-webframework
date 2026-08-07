@@ -5,8 +5,8 @@
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "incremental": true,
-    "tsBuildInfoFile": "../dist/ditsmod/build.tsbuildinfo",
-    "outDir": "../dist/ditsmod"
+    "tsBuildInfoFile": "../dist/holu/build.tsbuildinfo",
+    "outDir": "../dist/holu"
   },
   "include": ["./**/*.mts"]
 }
